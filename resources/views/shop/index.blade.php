@@ -13,7 +13,7 @@
                         <div class="item__title"><h3 class="text-center">{{$product->title}}</h3></div>
                         <div class="d-flex justify-content-between">
                             <div class="">$ {{$product->price}}</div>
-                            <a href="#" class="btn btn-success">Add to Cart</a>
+                            <a href="{{route('product.addToCart', [$product->id])}}" class="btn btn-success">Add to Cart</a>
                         </div>
                     </div>
                 </div>
